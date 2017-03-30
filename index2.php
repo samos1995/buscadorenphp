@@ -34,7 +34,7 @@
 <h1> Busquedas en tiempo real</h1>
 
 <div class="form-1-2">
-  <!--Obtenemos el nombre del usuario de tipo administrador que inicio sesion-->
+
 <label for="caja_busqueda" size="200">Buscar:</label>
 <input type="text" name="caja_busqueda" id="caja_busqueda" size="50" placeholder="Ingrese nombres, apellidos, cidentidad o grado"></input>
 </div>
