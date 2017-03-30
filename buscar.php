@@ -12,7 +12,7 @@ $query = "SELECT * FROM alumnos ORDER By codigo";
 if(isset($_POST['consulta'])){
 
     $q = $mysqli->real_escape_string($_POST['consulta']);
-    /*ES NECESARIO PONER EN EL SELECT LA UNIDAD PORQUE CUANDO CREAS LAS TABLAS LO MANDAS A LLAMAR EN LAS ETIQUETAS TR*/
+    /*ES NECESARIO PONER EN EL SELECT LA UNIDAD PORQUE CUANDO CREAS LAS TABLAS LO MANDAS A LLAMAR. ESPECIFICAMENTE DENTRO DEL WHILE*/
     $query = "SELECT codigo, nombres,unidad, apellidos, cidentidad, grado FROM alumnos WHERE nombres LIKE '%".$q."%' OR apellidos LIKE '%".$q."%' OR cidentidad LIKE '%".$q."%' OR grado LIKE '%".$q."%'";
 
 }
